@@ -8,6 +8,9 @@
 @foreach($listings as $listing)
 <x-listing-card :listing="$listing"/>
 @endforeach
-</div>
 
+</div>
+<div>
+  {{ $listings->links() }}
+</div>
 </x-layout>
